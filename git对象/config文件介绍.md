@@ -1,5 +1,5 @@
-#config文件介绍
-##remote
+# config文件介绍
+## remote
 - 在config中生成配置文件 
 >>$ git remote add origin 地址
 
@@ -16,7 +16,7 @@
 - 不能在模式中使用部分通配符，以下是不规范的例子：
 >>fetch = +refs/heads/qa*:refs/remotes/origin/qa*
 
-###推送
+### 推送
 - 推送指定分支到远程服务器的指定分支：
 >>$ git push origin master:refs/heads/qa/master
 
@@ -26,7 +26,7 @@
 
 >>$ git push origin --delete topic
 
-##core
+## core
 - core.repositoryFormatVersion 内部变量，用于标识存储库格式和布局版本。
 - core.fileMode告诉Git是否尊重工作树中的可执行文件。
 

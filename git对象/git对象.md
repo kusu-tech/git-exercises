@@ -1,4 +1,4 @@
-#git 对象
+# git 对象
 - 对象类型
 Blob、Tree、Commit、Tag
 - blob对象

@@ -37,23 +37,29 @@
 默认值为true（在配置文件中未指定core.filemode时）。
 
 - core.bare 
-  If true this repository is assumed to be bare and has no working directory associated with it. If this is the case a number of commands that require a working directory will be disabled, such as git-add or git-merge.
+
+If true this repository is assumed to be bare and has no working directory associated with it. If this is the case a number of commands that require a working directory will be disabled, such as git-add or git-merge.
 
 This setting is automatically guessed by git-clone or git-init when the repository was created. By default a repository that ends in "/.git" is assumed to be not bare (bare = false), while all other repositories are assumed to be bare (bare = true).
 
 - core.logallrefupdates
-启用引用日志 Enable the reflog. Updates to a ref <ref> is logged to the file "$GIT_DIR/logs/<ref>", by appending the new and old SHA-1, the date/time and the reason of the update, but only when the file exists. If this configuration variable is set to true, missing "$GIT_DIR/logs/<ref>" file is automatically created for branch heads (i.e. under refs/heads/), remote refs (i.e. under refs/remotes/), note refs (i.e. under refs/notes/), and the symbolic ref HEAD. If it is set to always, then a missing reflog is automatically created for any ref under refs/.
+
+启用引用日志 
+
+Enable the reflog. Updates to a ref <ref> is logged to the file "$GIT_DIR/logs/<ref>", by appending the new and old SHA-1, the date/time and the reason of the update, but only when the file exists. If this configuration variable is set to true, missing "$GIT_DIR/logs/<ref>" file is automatically created for branch heads (i.e. under refs/heads/), remote refs (i.e. under refs/remotes/), note refs (i.e. under refs/notes/), and the symbolic ref HEAD. If it is set to always, then a missing reflog is automatically created for any ref under refs/.
 
 This information can be used to determine what commit was the tip of a branch "2 days ago".
 
 This value is true by default in a repository that has a working directory associated with it, and false by default in a bare repository
 
 - core.symlinks
+
 If false, symbolic links are checked out as small plain files that contain the link text. git-update-index and git-add will not change the recorded type to regular file. Useful on filesystems like FAT that do not support symbolic links.
 
 The default is true, except git-clone or git-init will probe and set core.symlinks false if appropriate when the repository is created.
 
 - core.ignoreCase
+
 内部变量，它使各种变通办法可以使Git在不区分大小写的文件系统上更好地工作。例如，如果目录列表在Git期望“ Makefile”时找到了“ makefile”，则Git将假定它确实是同一文件，并继续将其记住为“ Makefile”。
 缺少设置则设置为false，在git clone 或者git init 创建的库，则设置为true
   

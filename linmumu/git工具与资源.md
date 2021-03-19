@@ -12,7 +12,7 @@ git插件：
 
 **4.Markdown**
 
-**5. [Docsify](https://docsify.js.org/#/?id=docsify)**
+**5.[Docsify](https://docsify.js.org/#/?id=docsify)**
 
 ****
 #### 资源篇

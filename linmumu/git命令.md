@@ -19,7 +19,6 @@
 - git branch -v 查看列出本地的所有分支并显示最后一次提交，当前所在分支
 - git merge [branch] 合并指定分支到当前分支
 - git checkou - 切换到上一个分支
-- 
 - git branch -d [branch-name] 删除分支
 - git push origin --delete [branch-name] 删除远程分支
 
